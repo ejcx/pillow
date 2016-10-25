@@ -29,7 +29,8 @@ class Route
      * @param string $action
      * @param string $viewClass
      * @param string $templateFile
-     * @param null $vars
+     * @param null   $vars
+     * @param array  $security
      */
     public function __construct($uri = null, $method = null, $controller = null, $action = null, $viewClass = null, $templateFile = null, $vars = null, $security = null)
     {
@@ -163,9 +164,8 @@ class Route
         return $this->security;
     }
 
-
     /**
-     * @param null $viewClass
+     * @param null $security
      */
     public function setSecurity(array $security)
     {

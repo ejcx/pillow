@@ -325,7 +325,7 @@ final class FrontController implements ControllerInterface
                     $route["viewClass"] = null;
                 }
                 $this->route = new Route($route["uri"], $this->request->getMethod(), $route["controller"],
-                    $route["action"], $route["viewClass"], $route["templateFile"], $vars);
+                    $route["action"], $route["viewClass"], $route["templateFile"], $vars, $route["security"]);
                 $this->request->attributes->add(["route" => $this->route]);
 
                 break;
