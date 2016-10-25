@@ -31,7 +31,7 @@ class Route
      * @param string $templateFile
      * @param null $vars
      */
-    public function __construct($uri = null, $method = null, $controller = null, $action = null, $viewClass = null, $templateFile = null, $vars = null)
+    public function __construct($uri = null, $method = null, $controller = null, $action = null, $viewClass = null, $templateFile = null, $vars = null, $security = null)
     {
         $this->uri = $uri ?: null;
         $this->method = $method ?: null;
@@ -40,6 +40,7 @@ class Route
         $this->viewClass = $viewClass ?: null;
         $this->templateFile = $templateFile ?: null;
         $this->vars = $vars ?: null;
+        $this->security = $security ?: null;
     }
 
     /**
