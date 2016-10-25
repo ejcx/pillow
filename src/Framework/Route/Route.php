@@ -181,7 +181,7 @@ class Route
             "viewClass"         => $this->getViewClass(),
             "templateFile"      => $this->getTemplateFile(),
             "vars"              => $this->getVars(),
-            "security"          => $this->security(),
+            "security"          => $this->getSecurity(),
         ];
     }
 }
